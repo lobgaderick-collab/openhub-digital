@@ -45,7 +45,6 @@ export default async function ArticlePage({
       AdUnit,
       img: (props: any) => {
         let src = props.src;
-        // Ensure relative paths have a leading slash
         if (src && !src.startsWith("http") && !src.startsWith("/")) {
           src = "/" + src;
         }
@@ -57,9 +56,6 @@ export default async function ArticlePage({
               width={800}
               height={450}
               className="object-cover"
-              onError={(e) => {
-                (e.target as HTMLImageElement).style.display = "none";
-              }}
             />
           </span>
         );
