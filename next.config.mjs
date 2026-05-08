@@ -9,10 +9,8 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // Old date-based WordPress URLs → new insights
       { source: "/:year/:month/:slug", destination: "/insights/:slug", permanent: true },
       { source: "/:year/:month/:day/:slug", destination: "/insights/:slug", permanent: true },
-      // Old category / tag prefixes
       { source: "/category/:slug", destination: "/insights/:slug", permanent: true },
       { source: "/tag/:slug", destination: "/insights/:slug", permanent: true },
     ];
