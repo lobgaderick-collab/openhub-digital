@@ -1,4 +1,6 @@
 ---
+
+
 title: The Ultimate Payroll Calculator for Cameroon - 52000F to 62000F
 date: '2024-03-28'
 categories:
@@ -6,7 +8,11 @@ categories:
   - tax
   - tax-obligations
 coverImage: Payslip-Generator-for-Cameroon.png
+
+
 ---
+
+
 
 Revolutionize payroll management with our cutting-edge Payroll Calculator for Cameroon! Seamlessly compute salaries, deductions, and employer contributions for precise and hassle-free payroll processing. Experience efficiency like never before!"
 
@@ -18,7 +24,7 @@ Enter Salary (between 52000 and 62000):
 Select Accident de Travail level: None Faible (1.75%) Moyen (2.5%) Elevé (5%)  
 Calculate Payroll
 
-<script>function calculatePayroll() { var salary = parseFloat(document.getElementById("salary").value); <div></div> if (isNaN(salary) || salary < 52000 || salary > 62000) { alert("Please enter a salary between 52000 and 62000."); return; } <div></div> var accidentLevel = parseFloat(document.getElementById("accidentLevel").value); <div></div> // Calculate values for payroll var IRPP = 0; var PVID_Salarial = salary * 4.2 / 100; var totalRetenueSalarial = 750 + PVID_Salarial; var salaireNetAPercevoir = salary - totalRetenueSalarial; var CFC_Patronal = salary * 1.5 / 100; var FNE = salary * 1 / 100; var PVID_Patronal = salary * 4.2 / 100; var allocationFamiliale = salary * 7 / 100; var accidentDeTravail = salary * accidentLevel / 100; var totalChargePatronal = CFC_Patronal + FNE + PVID_Patronal + allocationFamiliale + accidentDeTravail; <div></div> // Create payroll content var payrollContent = ` <table> <tr> <th colspan="2">PAYROLL</th> </tr> <tr> <td>Salaire taxable</td> <td>${salary.toFixed(2)} F</td> </tr> <tr> <td>IRPP</td> <td>${IRPP.toFixed(2)} F</td> </tr> <tr> <td>Total</td> <td>${IRPP.toFixed(2)} F</td> </tr> <tr> <td>CFC</td> <td>-</td> </tr> <tr> <td>TDL</td> <td>-</td> </tr> <tr> <td>RAV</td> <td>-</td> </tr> <tr> <td>PVID</td> <td>${PVID_Salarial.toFixed(2)} F</td> </tr> <tr> <td>Total des Salaires</td> <td>${totalRetenueSalarial.toFixed(2)} F</td> </tr> <tr> <td>Salaire net à percevoir</td> <td>${salaireNetAPercevoir.toFixed(2)} F</td> </tr> <tr> <th colspan="2">Charges Patronales</th> </tr> <tr> <td>CFC (Patronal)</td> <td>${CFC_Patronal.toFixed(2)} F</td> </tr> <tr> <td>FNE</td> <td>${FNE.toFixed(2)} F</td> </tr> <tr> <td>PVID Patronal</td> <td>${PVID_Patronal.toFixed(2)} F</td> </tr> <tr> <td>Allocation Familiale</td> <td>${allocationFamiliale.toFixed(2)} F</td> </tr> <tr> <td>Accident de travail</td> <td>${accidentDeTravail.toFixed(2)} F</td> </tr> <tr> <td>Total Charge Patronal</td> <td>${totalChargePatronal.toFixed(2)} F</td> </tr> </table>`; <div></div> document.getElementById("payroll").innerHTML = payrollContent; incrementCounter(); // Call the counter increment function } <div></div> // Initialize the counter variable var counter = 0; <div></div> // Function to increment the counter and update the display function incrementCounter() { counter++; document.getElementById("counterDisplay").innerText = "Number of times calculated: " + counter; }</script>
+<script>function calculatePayroll() &#123; var salary = parseFloat(document.getElementById("salary").value); <div></div> if (isNaN(salary) || salary < 52000 || salary > 62000) &#123; alert("Please enter a salary between 52000 and 62000."); return; &#125; <div></div> var accidentLevel = parseFloat(document.getElementById("accidentLevel").value); <div></div> // Calculate values for payroll var IRPP = 0; var PVID_Salarial = salary * 4.2 / 100; var totalRetenueSalarial = 750 + PVID_Salarial; var salaireNetAPercevoir = salary - totalRetenueSalarial; var CFC_Patronal = salary * 1.5 / 100; var FNE = salary * 1 / 100; var PVID_Patronal = salary * 4.2 / 100; var allocationFamiliale = salary * 7 / 100; var accidentDeTravail = salary * accidentLevel / 100; var totalChargePatronal = CFC_Patronal + FNE + PVID_Patronal + allocationFamiliale + accidentDeTravail; <div></div> // Create payroll content var payrollContent = ` <table> <tr> <th colspan="2">PAYROLL</th> </tr> <tr> <td>Salaire taxable</td> <td>${salary.toFixed(2)} F</td> </tr> <tr> <td>IRPP</td> <td>${IRPP.toFixed(2)} F</td> </tr> <tr> <td>Total</td> <td>${IRPP.toFixed(2)} F</td> </tr> <tr> <td>CFC</td> <td>-</td> </tr> <tr> <td>TDL</td> <td>-</td> </tr> <tr> <td>RAV</td> <td>-</td> </tr> <tr> <td>PVID</td> <td>${PVID_Salarial.toFixed(2)} F</td> </tr> <tr> <td>Total des Salaires</td> <td>${totalRetenueSalarial.toFixed(2)} F</td> </tr> <tr> <td>Salaire net à percevoir</td> <td>${salaireNetAPercevoir.toFixed(2)} F</td> </tr> <tr> <th colspan="2">Charges Patronales</th> </tr> <tr> <td>CFC (Patronal)</td> <td>${CFC_Patronal.toFixed(2)} F</td> </tr> <tr> <td>FNE</td> <td>${FNE.toFixed(2)} F</td> </tr> <tr> <td>PVID Patronal</td> <td>${PVID_Patronal.toFixed(2)} F</td> </tr> <tr> <td>Allocation Familiale</td> <td>${allocationFamiliale.toFixed(2)} F</td> </tr> <tr> <td>Accident de travail</td> <td>${accidentDeTravail.toFixed(2)} F</td> </tr> <tr> <td>Total Charge Patronal</td> <td>${totalChargePatronal.toFixed(2)} F</td> </tr> </table>`; <div></div> document.getElementById("payroll").innerHTML = payrollContent; incrementCounter(); // Call the counter increment function &#125; <div></div> // Initialize the counter variable var counter = 0; <div></div> // Function to increment the counter and update the display function incrementCounter() &#123; counter++; document.getElementById("counterDisplay").innerText = "Number of times calculated: " + counter; &#125;</script>
 
 Number of times calculated: 0
 

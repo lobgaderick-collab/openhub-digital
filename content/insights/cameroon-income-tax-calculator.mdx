@@ -1,4 +1,6 @@
 ---
+
+
 title: Online Cameroon income tax calculator
 date: '2024-03-29'
 categories:
@@ -11,7 +13,11 @@ tags:
   - non-salaried-workers
   - tax-planning-tool
 coverImage: Online-Cameroon-income-tax-calculator.png
+
+
 ---
+
+
 
 **Cameroon income tax calculator for Non-Salaried Insurance Brokers, Freelancers, independent salesperson, etc.**
 
@@ -37,7 +43,7 @@ Calculate Tax
 | Additional Council Tax |  |
 | Total Tax Payable |  |
 
-<script>function calculateTax() { var grossIncome = parseFloat(document.getElementById('grossIncome').value); var businessExpenses = calculateBusinessExpenses(); <div></div> // Calculate deductible expenses var deductibleExpenses = Math.max(0.30 * grossIncome, businessExpenses); <div></div> // Calculate taxable income var taxableIncome = grossIncome - deductibleExpenses; <div></div> // Calculate tax owed var taxOwed = 0.10 * taxableIncome; <div></div> // Calculate additional council tax var additionalCouncilTax = 0.10 * taxOwed; <div></div> // Calculate total tax payable var totalTaxPayable = taxOwed + additionalCouncilTax; <div></div> // Display the results in the table document.getElementById('taxOwed').textContent = "XAF " + taxOwed.toFixed(2); document.getElementById('additionalCouncilTax').textContent = "XAF " + additionalCouncilTax.toFixed(2); document.getElementById('totalTaxPayable').textContent = "XAF " + totalTaxPayable.toFixed(2); document.getElementById('resultTable').style.display = 'block'; {'}'} <div></div> function calculateBusinessExpenses() { var totalExpenses = 0; var expenseInputs = document.querySelectorAll('#expensesList input'); for (var i = 0; i < expenseInputs.length; i++) { if (expenseInputs[i].value !== '') { totalExpenses += parseFloat(expenseInputs[i].value); {'}'} {'}'} return totalExpenses; {'}'} <div></div> function addExpense() { var expensesList = document.getElementById('expensesList'); var newExpenseInput = document.createElement('li'); newExpenseInput.innerHTML = '<input type="number" placeholder="New Expense">'; expensesList.appendChild(newExpenseInput); {'}'}</script>
+<script>function calculateTax() &#123; var grossIncome = parseFloat(document.getElementById('grossIncome').value); var businessExpenses = calculateBusinessExpenses(); <div></div> // Calculate deductible expenses var deductibleExpenses = Math.max(0.30 * grossIncome, businessExpenses); <div></div> // Calculate taxable income var taxableIncome = grossIncome - deductibleExpenses; <div></div> // Calculate tax owed var taxOwed = 0.10 * taxableIncome; <div></div> // Calculate additional council tax var additionalCouncilTax = 0.10 * taxOwed; <div></div> // Calculate total tax payable var totalTaxPayable = taxOwed + additionalCouncilTax; <div></div> // Display the results in the table document.getElementById('taxOwed').textContent = "XAF " + taxOwed.toFixed(2); document.getElementById('additionalCouncilTax').textContent = "XAF " + additionalCouncilTax.toFixed(2); document.getElementById('totalTaxPayable').textContent = "XAF " + totalTaxPayable.toFixed(2); document.getElementById('resultTable').style.display = 'block'; &#123;'&#125;'&#125; <div></div> function calculateBusinessExpenses() &#123; var totalExpenses = 0; var expenseInputs = document.querySelectorAll('#expensesList input'); for (var i = 0; i < expenseInputs.length; i++) &#123; if (expenseInputs[i].value !== '') &#123; totalExpenses += parseFloat(expenseInputs[i].value); &#123;'&#125;'&#125; &#123;'&#125;'&#125; return totalExpenses; &#123;'&#125;'&#125; <div></div> function addExpense() &#123; var expensesList = document.getElementById('expensesList'); var newExpenseInput = document.createElement('li'); newExpenseInput.innerHTML = '<input type="number" placeholder="New Expense">'; expensesList.appendChild(newExpenseInput); &#123;'&#125;'&#125;</script>
 
 Use [VAT Calculator Cameroon](https://openhubdigital.com/vat-calculator-cameroon/) to calculate VAT for Cameroon.
 

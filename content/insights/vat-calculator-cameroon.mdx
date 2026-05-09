@@ -1,4 +1,6 @@
 ---
+
+
 title: VAT Calculator Cameroon
 date: '2024-03-25'
 categories:
@@ -8,11 +10,15 @@ tags:
   - vat-calculator
   - xaf
 coverImage: VAT-Calculator-Cameroon.png
+
+
 ---
+
+
 
 Use VAT Calculator Cameroon to calculate VAT for Cameroon.
 
-<script>function calculateVAT() { var amountInput = document.getElementById("amountInput").value.trim(); var amount = parseFloat(amountInput.replace(',', '').replace(' ', '')); // Ensure that any commas or spaces are removed from the input // Check for valid input if (isNaN(amount)) { alert("Please enter a valid amount."); return; } <div></div> var vatRate = 19.25 / 100; <div></div> // Calculate VAT amount var vatAmount = amount * vatRate; // Calculate total amount including VAT var totalAmount = amount + vatAmount; // Round the amounts to two decimal places for currency formatting vatAmount = vatAmount.toFixed(2); totalAmount = totalAmount.toFixed(2); // Display the VAT amount and total amount with XAF currency and thousand separators document.getElementById("vatAmount").innerHTML = "VAT Amount: " + parseFloat(vatAmount).toLocaleString('en-US') + " XAF"; document.getElementById("totalAmount").innerHTML = "Total Amount (including VAT): " + parseFloat(totalAmount).toLocaleString('en-US') + " XAF"; // Display results in table format var resultTable = document.getElementById("resultTable"); resultTable.innerHTML = ` <tr> <th>VAT Amount</th> <td>${parseFloat(vatAmount).toLocaleString('en-US')} XAF</td> </tr> <tr> <th>Total Amount (including VAT)</th> <td>${parseFloat(totalAmount).toLocaleString('en-US')} XAF</td> </tr> `; }</script>
+<script>function calculateVAT() &#123; var amountInput = document.getElementById("amountInput").value.trim(); var amount = parseFloat(amountInput.replace(',', '').replace(' ', '')); // Ensure that any commas or spaces are removed from the input // Check for valid input if (isNaN(amount)) &#123; alert("Please enter a valid amount."); return; &#125; <div></div> var vatRate = 19.25 / 100; <div></div> // Calculate VAT amount var vatAmount = amount * vatRate; // Calculate total amount including VAT var totalAmount = amount + vatAmount; // Round the amounts to two decimal places for currency formatting vatAmount = vatAmount.toFixed(2); totalAmount = totalAmount.toFixed(2); // Display the VAT amount and total amount with XAF currency and thousand separators document.getElementById("vatAmount").innerHTML = "VAT Amount: " + parseFloat(vatAmount).toLocaleString('en-US') + " XAF"; document.getElementById("totalAmount").innerHTML = "Total Amount (including VAT): " + parseFloat(totalAmount).toLocaleString('en-US') + " XAF"; // Display results in table format var resultTable = document.getElementById("resultTable"); resultTable.innerHTML = ` <tr> <th>VAT Amount</th> <td>${parseFloat(vatAmount).toLocaleString('en-US')} XAF</td> </tr> <tr> <th>Total Amount (including VAT)</th> <td>${parseFloat(totalAmount).toLocaleString('en-US')} XAF</td> </tr> `; &#125;</script>
 
 Enter Amount (XAF): 
 
