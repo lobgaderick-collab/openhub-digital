@@ -1,0 +1,1 @@
+  if (allPosts.some(p = === slug)) redirect(`/insights/${slug}`);
